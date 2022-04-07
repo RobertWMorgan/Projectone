@@ -1,0 +1,131 @@
+/* general */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../assets/cookie_monster-wallpaper-2560x1440.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.center-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+
+/* side panels */
+
+.panel {
+  border: 1px solid blue;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+}
+
+#right-panel {
+  justify-content: flex-start;
+}
+
+/* buttons */
+
+.button_div {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+
+
+
+/* main section */
+
+main {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: grey;
+}
+
+#main_section {
+  display: flex;
+  border: 1px solid black;
+  margin-bottom: 80px;
+}
+
+header {
+  margin-top: 20px;
+
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#score {
+  margin-right: 50px;
+}
+
+
+#grid div {
+  border: 1px solid lightgrey;
+  flex-grow: 1;
+  height: 9%;
+  width: 9%;
+}
+
+#grid {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: center;
+  height: 600px;
+  width: 600px;
+}
+
+
+/* player & enemy */
+
+.player {
+  background-image: url('../assets/playercat.gif');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.enemy {
+  background-image: url('../assets/coding\ bug.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* lives */
+
+.heart {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 20px;
+}
+
+
+.lives {
+  display: flex;
+  margin-left: 30px;
+}
