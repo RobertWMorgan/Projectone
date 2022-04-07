@@ -3,10 +3,11 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;
 }
 
 body {
-  background-image: url('../assets/cookie_monster-wallpaper-2560x1440.jpg');
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/matrix\ bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -25,16 +26,27 @@ body {
 /* side panels */
 
 .panel {
-  border: 1px solid blue;
-  background-color: blue;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 300px;
+  background-color: rgba(0, 0, 0, 0.9);
+  margin: 5px;
+  border-radius: 20px;
 }
 
 #right-panel {
   justify-content: flex-start;
+}
+
+.hiscores {
+  height: 500px;
+  margin-top: 30px;
+}
+
+#instruction_title {
+  margin-top: 30px;
 }
 
 /* buttons */
@@ -43,11 +55,24 @@ body {
   margin-bottom: 50px;
   display: flex;
   justify-content: space-evenly;
+  flex-direction: column;
 }
 
+button {
+  margin: 0 auto;
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #011751;
+  color: white;
+  border: 2px solid white;
+  font-size: large;
+  text-align: center;
+}
 
-
-
+#start{
+  margin-bottom: 20px;
+}
 
 /* main section */
 
@@ -57,23 +82,33 @@ main {
   flex-direction: column;
   padding-left: 50px;
   padding-right: 50px;
-  background-color: grey;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid #0343f4;
+  color: white;
 }
 
 #main_section {
   display: flex;
-  border: 1px solid black;
   margin-bottom: 80px;
 }
 
 header {
   margin-top: 20px;
-
 }
+
+h1 {
+  font-size: 2em;
+}
+
+#h1_cat{
+  font-size: 45px;
+}
+
 .info {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 #score {
@@ -82,7 +117,6 @@ header {
 
 
 #grid div {
-  border: 1px solid lightgrey;
   flex-grow: 1;
   height: 9%;
   width: 9%;
@@ -96,6 +130,8 @@ header {
   justify-content: center;
   height: 600px;
   width: 600px;
+  border: 1px solid white;
+  box-shadow: 0px 0px 20px rgb(255 255 255 / 90%);
 }
 
 
@@ -121,7 +157,7 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 20px;
+  width: 25px;
 }
 
 
