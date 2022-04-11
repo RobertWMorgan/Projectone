@@ -34,6 +34,7 @@ body {
   background-color: rgba(0, 0, 0, 0.9);
   margin: 5px;
   border-radius: 20px;
+  padding: 10px;
 }
 
 #right-panel {
@@ -41,12 +42,39 @@ body {
 }
 
 .hiscores {
-  height: 500px;
   margin-top: 30px;
 }
 
 #instruction_title {
   margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+p {
+  margin-bottom: 50px;
+}
+
+ul {
+  list-style: square;
+}
+
+li {
+  text-align: left;
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+#space {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#space_li{
+  margin-bottom: 50px;
+}
+
+h2 {
+  margin-bottom: 30px;
 }
 
 /* buttons */
@@ -70,8 +98,35 @@ button {
   text-align: center;
 }
 
+button:hover{
+  background-color: #13338a;
+}
+
 #start{
   margin-bottom: 20px;
+}
+
+
+#switch{
+  width: 150px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  border: 2px solid black;
+}
+
+#switch:hover, button:hover {
+  cursor: pointer;
+}
+
+.easy {
+  background-image: url('../assets/switch\ easy.png')
+}
+
+.extreme {
+  background-image: url('../assets/switch\ xtreme.png')
 }
 
 /* main section */
@@ -109,6 +164,7 @@ h1 {
   justify-content: space-between;
   margin-bottom: 10px;
   margin-top: 20px;
+  height: 25px;
 }
 
 #score {
@@ -150,6 +206,37 @@ h1 {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.enemy_projectile {
+  background-image: url('../assets/error-icon-25266.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.projectile {
+  background-image: url('../assets/icon.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.explosion {
+  background-image: url('../assets/Green-check-mark-icon-on-transparent-background-PNG.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dmg {
+  background-image: url('../assets/error.gif');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 
 /* lives */
 

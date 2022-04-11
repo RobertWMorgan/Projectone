@@ -11,27 +11,35 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
-<body class="center-screen">
+<body class="center-screen">  
   <section id="main_section">
     <!-- hiscores -->
     <section id="left-panel" class="panel">
       <div class="hiscores">
         <h2>Hi-scores</h2>
+        <ol>
+          <li id="list1">Robert: <span class="score_class" id="9999999999">9999999999</span></li>
+          <li id="list2">H. Purrter: <span class="score_class" id="2000">2000</span></li>
+          <li item="list3">Hermeownie: <span class="score_class" id="700">700</span></li>
+          <li item="list4">Dumbledoge: <span class="score_class" id="1">1</span></li>
+        </ol>
+      </div>
+      <div id="switch" class="easy">
       </div>
       <div class="button_div">
         <button id="start">Start</button>
         <button id="reset">Reset</button>
       </div>
-    </section>
+    </section> 
     <!-- Main -->
     <main>
       <header><h1>BUG <span id="h1_cat">CAT</span>ASTROPHE!!</h1></header>
       <!-- Lives & Score -->
       <section class="info">
         <div class="lives">
-          <img class="heart" src="assets/life.png">
-          <img class="heart" src="assets/life.png">
-          <img class="heart" src="assets/life.png">
+          <img class="heart" id="life1" src="assets/life.png">
+          <img class="heart" id="life2" src="assets/life.png">
+          <img class="heart" id="life3" src="assets/life.png">
         </div>
         <div id="score">
           <p>Score: <span id="score_num"></span></p>
@@ -46,7 +54,15 @@
       <h2 id="instruction_title">Instructions</h2>
       <!-- Mr Meowscles -->
       <div>
-        Instructions go here
+        <p>Oh No! Mr Mewoscles' program has been invaded by bugs! Help Him debug it by clearing all enemies</p>
+        <ul>
+          <li>&#8592; to move left</li>
+          <li>&#8594; to move right</li>
+          <li id="space_li"><span id="space">space</span> to shoot</li>
+          <li>Defeat all the bugs to win</li>
+          <li>You only have 3 lives</li>
+          <li>Don't get hit or let them reach the bottom!</li>
+        </ul>
       </div>
     </section>
   </section>
