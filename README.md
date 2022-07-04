@@ -1,5 +1,7 @@
 # Bug CATastrophe
 
+[Link to project](https://robertwmorgan.github.io/Projectone/)
+
 Bug Catastrophe is a game that is based on space invaders. You have to shoot all the enemies that are moving side to side on the screen without getting hit to win. The project took a full week to make and is my first ever project. 
 
 ### Project Brief
