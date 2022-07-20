@@ -2,14 +2,16 @@
 
 [Link to project](https://robertwmorgan.github.io/Projectone/)
 
-Bug Catastrophe is a game that is based on space invaders. You have to shoot all the enemies that are moving side to side on the screen without getting hit to win. The project took a full week to make and is my first ever project. 
+Bug Catastrophe is a game that is based on Space Invaders. You have to shoot all the enemies that are moving side to side on the screen without getting hit to win. The project took a full week to make and is my first ever project.
 
 ### Project Brief
+
+Timeframe: 1 week
+Team size: Solo
 
 The project was to create a grid-based game within a week using HTML, CSS and JavaScript. We were able to pick from a variety of games such as tetris or minesweeper, etc. I chose to create Space Invaders as I enjoyed playing the game growing up and I thought it would help me practice timings in JS.
 
 Space Invaders is a game with 3 buttons, space to shoot and left & right arrows to move. The enemies would go left to right until they reached the edge then go down one whilst shooting at the player. The enemies would win once they either shot the player and eliminated all their lives or reached the very bottom of the screen.
-
 
 ### Technologies Used
 
@@ -17,7 +19,7 @@ Space Invaders is a game with 3 buttons, space to shoot and left & right arrows 
 
 I used HTML to create the general structure of the game.
 
-- Different sections for each part of the page..
+- Different sections for each part of the page.
 - Grid container.
 - All of the static text.
 - Start, Reset and Difficulty buttons.
@@ -49,21 +51,22 @@ JavaScript was used to make the game work.
 
 #### Day 1
 
-This was my first project and I wasn’t too sure how to proceed. I started by creating a basic wireframe and adding all the main deliverables, how I would approach certain problems and some stretch goals for if I had extra time. 
+This was my first project and I wasn’t too sure how to proceed. I started by creating a basic wireframe and adding all the main deliverables, how I would approach certain problems and some stretch goals for if I had extra time.
 
 I created the general structure of the site in HTML and made the function to create the game grid in JS.
 
-I also created the player character movement and got it to move around the game grid correctly. I did this by storing the keycode value of the keypress and using if statements to react to the player input. 
+I also created the player character movement and got it to move around the game grid correctly. I did this by storing the keycode value of the keypress and using if statements to react to the player input.
+
 
 ![JS movement function](assets/Readme%20Images/Screenshot%202022-06-20%20at%2014.51.27.png)
 
-The shooting mechanics were a little more complicated. I used an interval timer to time the movement of the projectile along the grid. 
+The shooting mechanics were a little more complicated. I used an interval timer to time the movement of the projectile along the grid.
 
 ![JS Shoot mechanic](assets/Readme%20Images/Screenshot%202022-06-20%20at%2015.10.39.png)
 
 #### Day 2
 
-I focused on adding enemies and some basic css here to get a better feel for my game. Again I used interval timers to time their movements and an if statement to change their direction and move down the grid once they got to the end. I also added enemy shooting mechanics by using math.random to generate a random interval for them to shoot at and which random enemy to shoot. 
+I focused on adding enemies and some basic css here to get a better feel for my game. Again I used interval timers to time their movements and an if statement to change their direction and move down the grid once they got to the end. I also added enemy shooting mechanics by using math.random to generate a random interval for them to shoot at and which random enemy to shoot.
 
 ![JS Enemy movement and shooting mechanics](assets/Readme%20Images/Screenshot%202022-06-20%20at%2015.12.25.png)
 
@@ -75,7 +78,7 @@ I also did the final CSS for this project.
 
 #### Day 4
 
-I added a second difficulty level that had faster enemies & a button to toggle difficulties. Sound was also added using JS to change the audio source depending on the situation. 
+I added a second difficulty level that had faster enemies & a button to toggle difficulties. Sound was also added using JS to change the audio source depending on the situation.
 
 I also started on a bonus boss fight that would take place if the player beat the harder difficulty. This boss-fight would be made more difficult than regular stages by having the boss moving randomly instead of following the traditional space-invaders movement.
 
@@ -91,10 +94,20 @@ I finished the boss-fight stage & added images as my face for the enemies and di
 - Player is spawned on grid.
 - Game is constantly checking to see if a grid tile contains both projectiles and either the player character or enemies for collision detection.
 
-### Win/Loss
+![Game Start]( assets/Readme%20Images/game_start.PNG)
+
+### Player Win/Loss
 
 - The game grid’s display is set to none and a new grid is generated.
 - The text shown is based on if the player wins or loses.
+- An input field is opened where you can enter your name for the hi-scores
+
+![Game end screen](assets/Readme%20Images/game_over.PNG)
+
+
+After a win or loss you can input your name for it to appear on the hi-scores. This is saved using local storage
+
+![game over screen](assets/Readme%20Images/end_screen.PNG)
 
 ### Key Learnings
 
